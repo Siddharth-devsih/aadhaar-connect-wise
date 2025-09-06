@@ -8,7 +8,8 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Comparison", href: "#comparison" },
+    { name: "Difference", href: "#comparison" },
+    { name: "Seeding Process", href: "#seeding-process" },
     { name: "Awareness", href: "#awareness" },
     { name: "FAQs", href: "#faqs" },
     { name: "Contact", href: "#contact" },
