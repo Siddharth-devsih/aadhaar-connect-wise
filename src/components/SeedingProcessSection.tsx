@@ -181,7 +181,7 @@ const SeedingProcessSection = () => {
               variant="outline"
               size="lg" 
               className="text-lg px-8 py-6"
-              onClick={() => window.open('https://base.npci.org.in/base/homepage', '_blank')}
+              onClick={() => window.open('https://www.npci.org.in/', '_blank')}
             >
               Apply for Aadhaar Seeding
               <ExternalLink className="ml-2 h-5 w-5" />
@@ -190,6 +190,18 @@ const SeedingProcessSection = () => {
           <p className="text-sm text-muted-foreground">
             Verify if your Aadhaar is already linked to your bank account or start the seeding process
           </p>
+          
+          {/* Instructions for NPCI */}
+          <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+            <h4 className="font-semibold text-sm text-foreground mb-3">Steps to Apply for Aadhaar Seeding on NPCI:</h4>
+            <ol className="text-sm text-muted-foreground space-y-1 text-left max-w-md mx-auto">
+              <li>1. Click "Apply for Aadhaar Seeding" button above</li>
+              <li>2. Select "Consumer" from the menu</li>
+              <li>3. Click on "BASE" option</li>
+              <li>4. Select "Aadhaar Seeding" service</li>
+              <li>5. Follow the on-screen instructions</li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
