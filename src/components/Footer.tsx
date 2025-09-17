@@ -27,7 +27,7 @@ const Footer = () => {
               <div className="p-2 bg-primary rounded-lg">
                 <CreditCard className="h-6 w-6 text-white" />
               </div>
-              <span className="text-2xl font-bold">AadhaarGuide</span>
+              <span className="text-2xl font-bold">ScholarEase</span>
             </div>
             <p className="text-background/80 leading-relaxed">
               Empowering students and citizens with knowledge about Aadhaar banking and Direct Benefit Transfer systems.
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-background/80">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">help@aadhaarguide.edu</span>
+                <span className="text-sm">help@scholarease.edu</span>
               </div>
               <div className="flex items-center gap-2 text-background/80">
                 <Phone className="h-4 w-4" />
@@ -113,7 +113,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-background/80 text-sm">
-              © 2024 AadhaarGuide. Educational website for awareness purposes.
+              © 2024 ScholarEase. Educational website for awareness purposes.
             </div>
             <div className="flex gap-6 text-sm text-background/80">
               <a href="#" className="hover:text-background transition-colors">Privacy Policy</a>

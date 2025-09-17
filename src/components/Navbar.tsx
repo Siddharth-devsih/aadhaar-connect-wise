@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="p-2 bg-primary rounded-lg">
               <CreditCard className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">AadhaarGuide</span>
+            <span className="text-xl font-bold text-foreground">ScholarEase</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -168,16 +168,27 @@ const SeedingProcessSection = () => {
 
         {/* Action Buttons */}
         <div className="text-center space-y-4">
-          <Button 
-            size="lg" 
-            className="text-lg px-8 py-6"
-            onClick={() => window.open('https://resident.uidai.gov.in/bank-mapper', '_blank')}
-          >
-            Check Seeding Status
-            <ExternalLink className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => window.open('https://myaadhaar.uidai.gov.in/bank-seeding-status', '_blank')}
+            >
+              Check Seeding Status
+              <ExternalLink className="ml-2 h-5 w-5" />
+            </Button>
+            <Button 
+              variant="outline"
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => window.open('https://base.npci.org.in/base/homepage', '_blank')}
+            >
+              Apply for Aadhaar Seeding
+              <ExternalLink className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
           <p className="text-sm text-muted-foreground">
-            Verify if your Aadhaar is already linked to your bank account
+            Verify if your Aadhaar is already linked to your bank account or start the seeding process
           </p>
         </div>
       </div>
