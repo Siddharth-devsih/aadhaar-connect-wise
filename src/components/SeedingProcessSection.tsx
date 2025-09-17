@@ -191,16 +191,80 @@ const SeedingProcessSection = () => {
             Verify if your Aadhaar is already linked to your bank account or start the seeding process
           </p>
           
-          {/* Instructions for NPCI */}
-          <div className="mt-6 p-4 bg-muted/50 rounded-lg">
-            <h4 className="font-semibold text-sm text-foreground mb-3">Steps to Apply for Aadhaar Seeding on NPCI:</h4>
-            <ol className="text-sm text-muted-foreground space-y-1 text-left max-w-md mx-auto">
-              <li>1. Click "Apply for Aadhaar Seeding" button above</li>
-              <li>2. Select "Consumer" from the menu</li>
-              <li>3. Click on "BASE" option</li>
-              <li>4. Select "Aadhaar Seeding" service</li>
-              <li>5. Follow the on-screen instructions</li>
-            </ol>
+          {/* Instructions for NPCI - Interactive Version */}
+          <div className="mt-8 p-6 bg-gradient-to-br from-primary/5 to-success/5 rounded-xl border border-primary/20">
+            <div className="text-center mb-6">
+              <h4 className="text-lg font-bold text-foreground mb-2">Interactive Guide: Apply for Aadhaar Seeding</h4>
+              <p className="text-sm text-muted-foreground">Follow these steps on NPCI website</p>
+            </div>
+            
+            <div className="grid gap-4 max-w-2xl mx-auto">
+              {[
+                { 
+                  step: "1", 
+                  title: "Visit NPCI Website", 
+                  desc: "Click the 'Apply for Aadhaar Seeding' button above",
+                  icon: "🌐"
+                },
+                { 
+                  step: "2", 
+                  title: "Select Consumer", 
+                  desc: "Find and click on 'Consumer' option from the main menu",
+                  icon: "👤"
+                },
+                { 
+                  step: "3", 
+                  title: "Choose BASE", 
+                  desc: "Look for 'BASE' service and click on it",
+                  icon: "🏦"
+                },
+                { 
+                  step: "4", 
+                  title: "Aadhaar Seeding", 
+                  desc: "Select 'Aadhaar Seeding' from the available services",
+                  icon: "🎯"
+                },
+                { 
+                  step: "5", 
+                  title: "Complete Process", 
+                  desc: "Fill in your details and follow the instructions",
+                  icon: "✅"
+                }
+              ].map((item, index) => (
+                <div key={index} className="group">
+                  <Card className="hover:shadow-md transition-all duration-300 hover:border-primary/30">
+                    <CardContent className="p-4">
+                      <div className="flex items-center gap-4">
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            {item.step}
+                          </div>
+                        </div>
+                        <div className="flex-grow">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-lg">{item.icon}</span>
+                            <h5 className="font-semibold text-foreground">{item.title}</h5>
+                          </div>
+                          <p className="text-sm text-muted-foreground">{item.desc}</p>
+                        </div>
+                        <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <div className="w-6 h-6 bg-success rounded-full flex items-center justify-center">
+                            <CheckCircle className="h-4 w-4 text-white" />
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            
+            <div className="mt-6 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-success/10 rounded-full">
+                <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                <span className="text-sm text-success font-medium">Ready to start your seeding process</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
